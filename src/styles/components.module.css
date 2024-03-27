@@ -1,0 +1,14 @@
+.title {
+    font-size: xxx-large;
+}
+
+.container {
+    text-align: center;
+}
+
+.navigation {
+    list-style-type: none;
+    font-size: large;
+    margin: 2em 2em;
+    border: 2px solid #ff00c8;
+}

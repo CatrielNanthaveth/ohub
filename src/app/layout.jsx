@@ -1,4 +1,5 @@
 import "./globals.css";
+import { inter } from "@/styles/fonts";
 
 export const metadata = {
   title: "UNO hub",
@@ -10,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=''>
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>
