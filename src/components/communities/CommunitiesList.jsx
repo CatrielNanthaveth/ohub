@@ -1,5 +1,6 @@
 import { filterItems } from '@/utils/filterItems';
 import { WhatsAppOutlined } from '@ant-design/icons';
+import styles from '@/styles/components.module.css';
 
 export const CommunitiesList = ({ query, dataset }) => {
     
@@ -7,7 +8,7 @@ export const CommunitiesList = ({ query, dataset }) => {
 
     return (
         <div>
-            <ul>
+            <ul className={styles.list}>
                 {items.map((e, index) => {
                     return (
                         <li key={index}>

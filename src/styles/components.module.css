@@ -3,12 +3,29 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .navigation {
-    list-style-type: none;
     font-size: large;
-    margin: 2em 2em;
-    border: 2px solid #ff00c8;
+    border: 2px none #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3vh 4vw;
+    margin: 2em;
+    background-color: rgba(0, 39, 124, 0.644);
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link:visited,
+.link:link {
+    color: white;
 }

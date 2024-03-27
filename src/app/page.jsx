@@ -8,16 +8,22 @@ export default function Home() {
       <h1 className={styles.title}>UNO HUB</h1>
       <h2>Comunidades de alumnos, para alumnos.</h2>
 
-      <ul>
-        <li className={styles.navigation}>
-          <Link href='/communities'>Comunidades IT</Link>
-        </li>
-        <li className={styles.navigation}>
-          <Link href='/groups'>Grupos de materias</Link>
-        </li>
-        <li className={styles.navigation}>
-          <Link href='/ntrs'>Sobre NTRS</Link>
-        </li>
+      <ul className={styles.list}>
+        <Link className={styles.link} href='/communities'>
+          <li className={styles.navigation}>
+            Comunidades IT
+          </li>
+        </Link>
+        <Link className={styles.link} href='/groups'>
+          <li className={styles.navigation}>
+            Grupos de materias
+          </li>
+        </Link>
+        <Link className={styles.link} href='/ntrs'>
+          <li className={styles.navigation}>
+            Sobre NTRS
+          </li>
+        </Link>
       </ul>
     </div>
   )

@@ -1,6 +1,6 @@
 import { filterItems } from "@/utils/filterItems";
 import { WhatsAppOutlined } from "@ant-design/icons";
-import { useState } from "react"
+import styles from '@/styles/components.module.css';
 
 export const SubjectsList = ({ query, dataset }) => {
 
@@ -9,10 +9,10 @@ export const SubjectsList = ({ query, dataset }) => {
 
     return (
         <div>
-            <ul>
+            <ul >
                 {items.map((e, index) => {
                     return (
-                        <li key={index}>
+                        <li key={index} className={styles.list}>
                             <div className="card">
                                 <div className="card-header">
                                     <h3 className="card-title">{e.name}</h3>

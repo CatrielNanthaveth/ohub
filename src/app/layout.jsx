@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         {children}
+        <footer>
+          <p>Desarrollado por NTRS {'<'}3</p>
+        </footer>
       </body>
     </html>
   );
